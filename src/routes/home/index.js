@@ -10,6 +10,7 @@
 import React from 'react';
 import Home from './Home';
 import Layout from '../../components/Layout';
+import PlaylistBar from '../../components/Playlist/PlaylistBar';
 
 async function action({ fetch }) {
   const resp = await fetch('/graphql', {
@@ -24,6 +25,7 @@ async function action({ fetch }) {
     chunks: ['home'],
     component: (
       <Layout>
+        <PlaylistBar />
         <Home news={data.news} />
       </Layout>
     ),

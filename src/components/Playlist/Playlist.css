@@ -1,0 +1,14 @@
+.playlistBar {
+  display: flex;
+  list-style-type: none;
+}
+
+.playlistBar .playlist {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.playlistBar .playlist.remaining {
+  flex: 2;
+}
